@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">40dp</dimen>
+    <dimen name="rounded_btn_width">140dp</dimen>
+    <dimen name="button_size">200dp</dimen>
+</resources>

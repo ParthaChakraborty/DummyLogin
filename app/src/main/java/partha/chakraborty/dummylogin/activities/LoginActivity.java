@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.tv_login:
                 if (utils.isNetworkAvailable(LoginActivity.this)) {
                     if (validateLogin()) {
@@ -95,9 +95,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     } catch (JSONException e) {
                         e.printStackTrace();
                         utils.hideLoader();
+                        utils.showAlertErrorMessage("Invalid user name/password", LoginActivity.this);
                     }catch (Exception e) {
                         e.printStackTrace();
                         utils.hideLoader();
+                        utils.showAlertErrorMessage("Invalid user name/password", LoginActivity.this);
                     }
                 }
             }, new Response.ErrorListener() {

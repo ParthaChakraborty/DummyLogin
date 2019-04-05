@@ -9,43 +9,102 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dummy POST"
-        android:layout_marginTop="200dp" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_top" />
 
-    <EditText
-        android:id="@+id/et_userid"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/rectangular_border"
-        android:ems="10"
-        android:hint="User ID"
-        android:gravity="center"
-        android:inputType="text"
-        android:textColor="@color/colorPrimaryDark" />
+        android:background="@drawable/rectangular_border">
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/baseline_person_black"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:background="#BABABA" />
+
+        <EditText
+            android:id="@+id/et_userid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:hint="User ID"
+            android:inputType="text"
+            android:padding="10dip"
+            android:textColor="@android:color/black"
+            android:textColorHint="#4D4D4D"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rectangular_border"
-        android:ems="10"
-        android:hint="Password"
-        android:gravity="center"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryDark" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular_border">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/baseline_https_black"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:background="#BABABA" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:textColor="@android:color/black"
+            android:textColorHint="#4D4D4D"
+            android:textSize="12sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         android:gravity="center"
-        android:padding="8dp"
+        android:padding="12dp"
+        android:textSize="14sp"
         android:text="Login"
         android:textColor="@android:color/white"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@drawable/rounded_green_bg" />
 </LinearLayout>
